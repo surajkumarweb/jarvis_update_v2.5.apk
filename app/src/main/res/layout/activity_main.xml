@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0E17"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J.A.R.V.I.S APK INSTALLER"
+        android:textColor="#00E5FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Permission Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1905"
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Package Install Permission Needed"
+            android:textColor="#FFB300"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnGrantPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Grant"
+            android:backgroundTint="#FFB300"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APK Download Link (URL):"
+        android:textColor="#8A99AD"
+        android:textSize="14sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#131B2A"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Status Box -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#131B2A"
+        android:padding="12dp"
+        android:textColor="#00E5FF"
+        android:textSize="14sp"
+        android:text="STATUS: Ready to download and install updates."
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnDownloadInstall"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="#00E5FF"
+        android:text="⬇ Download &amp; Install APK"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <!-- Backward-compatible aliases -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnInstallApk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+</LinearLayout>

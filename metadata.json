@@ -1,0 +1,6 @@
+{
+  "name": "J.A.R.V.I.S",
+  "description": "Multi-agent autonomous AI ecosystem with Central Brain (gemini-2.5-pro), Vision Specialist, Device Function Calling, Ecosystem Bridge (:8080), and Self-Updating Package Installer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
